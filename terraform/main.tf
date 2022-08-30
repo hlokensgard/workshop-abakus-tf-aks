@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "aks" {
-  name = random_pet.server.id
+  name     = random_pet.server.id
   location = "westeurope"
 }
 
@@ -26,5 +26,5 @@ resource "azurerm_kubernetes_cluster" "aks" {
 
 # Creates a random pet name to be used in as resource group name
 resource "random_pet" "server" {
-    length = 3
+  length = 3
 }

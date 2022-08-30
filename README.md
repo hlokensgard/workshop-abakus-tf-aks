@@ -1,36 +1,42 @@
 # workshop-abakus-tf-aks
 A repository for a workshop given to Abakus.
-'
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-## Requirements
+# Prerequisite
+* Terraform
+* Az CLI
+* Code editor
+* Git
 
-| Name | Version |
-|------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~>1.0.0 |
+# Installation guide
+All installasjon kan utføres ved å følge følgende prosess:
+* Trykk på windows knappen og skriv in Powershell -> Start Windows Powershell
+* Installer chocolatey ved å kjøre
 
-## Providers
+  ```iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))```
+* Installer Vs Code ved å kjøre
 
-No providers.
+    ```choco install vscode -y```
+* Installer terraform ved å kjøre
 
-## Modules
+   ```Choco install terraform –version=1.0.0 -y```
+* Installer Git ved å kjøre
 
-No modules.
+   ```choco install git.install```
 
-## Resources
+* Installer AZ CLI ved å kjøre
 
-No resources.
+  ```Invoke-WebRequest -Uri https://aka.ms/installazurecliwindows -OutFile .\AzureCLI.msi; Start-Process msiexec.exe -Wait -ArgumentList '/I AzureCLI.msi /quiet'; rm .\AzureCLI.msi```
 
-## Inputs
+Verifiser at terraform og az cli har blitt installert ved å lukke windows powershell og åpne opp et nytt vindu
+* Terraform –version : du skal få ut versjonen av terraform.
+* Az –version: du skal få ut versjonen av AZ CLI.
+# How to
+## Deployer terraform konfigurasjon til subscription
+* Naviger til mappen `terraform`
+* Log på Azure ved å bruke `az cli`
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_tags"></a> [tags](#input\_tags) | A map over the tags for this module | `map(any)` | n/a | yes |
-| <a name="input_foo"></a> [foo](#input\_foo) | this is a foo variable | `string` | `"bar"` | no |
+   ```az login --tenant id --use-device-code ```
+* Kjør `terraform init`
+* Kjør `terraform apply`
 
-## Outputs
-
-| Name | Description |
-|------|-------------|
-| <a name="output_foo"></a> [foo](#output\_foo) | this is a output of the foo variable |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+Output er navnet på ressursgruppen din.

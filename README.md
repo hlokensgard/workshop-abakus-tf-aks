@@ -8,7 +8,6 @@ Følgende er High-Level Agenda
 
 ![Overview of agenda](overview_agenda.png)
 
-
 ## Prerequisite
 
 * Terraform

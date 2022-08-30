@@ -1,0 +1,22 @@
+# Exclude .terraform directory
+**/.terraform/
+
+# Expclicitly exclude .tfstate and terraform.tfvars
+*.tfstate
+*.tfstate.backup
+
+# Exclude terraform lock hcl file
+*.terraform.lock.hcl
+
+# Exclude backend and tfvars files
+backend.tf.json
+terraform.tfvars.json
+
+# Artifacts from CI/CD
+**/plan.tfplan
+**/.dontapply.*.txt
+
+# vim
+**/.*.sw?
+**/*~
+

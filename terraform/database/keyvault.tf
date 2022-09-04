@@ -16,6 +16,7 @@
     key_permissions = [
       "Create",
       "Get",
+      "List"
     ]
 
     secret_permissions = [

@@ -22,6 +22,7 @@
     secret_permissions = [
       "Set",
       "Get",
+      "List",
       "Delete",
       "Purge",
       "Recover"

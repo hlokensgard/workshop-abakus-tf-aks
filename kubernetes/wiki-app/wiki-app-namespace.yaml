@@ -1,0 +1,4 @@
+﻿apiVersion: v1
+kind: Namespace
+metadata:
+  name: <insert the name of your namespace>

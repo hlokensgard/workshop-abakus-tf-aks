@@ -11,3 +11,6 @@ output "sql_server_admin_password" {
   sensitive = true
 }
 
+output "db_name" {
+  value = azurerm_mssql_database.database.name
+}

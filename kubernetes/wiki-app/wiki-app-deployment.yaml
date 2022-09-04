@@ -1,11 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  #Change this
+  namespace: <your Namespace>
   name: wiki-app
   labels:
     app: wiki-app
     tier: frontend
-    
 spec:
   selector:
     matchLabels:
@@ -16,11 +17,9 @@ spec:
       labels:
         app: wiki-app
         tier: frontend
-
     spec:
       containers:
       - name: wiki-app-frontend
-  
         ## Container supplied by requarks - contains node.js running wiki.js
         image: requarks/wiki:2
         env:

@@ -1,15 +1,19 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-fabulous-app-frontend
+  name: wiki-app
   labels:
-    app: my-fabulous-app
+    app: wiki-app
     tier: frontend
 spec:
   type: LoadBalancer
   selector:
-    app: my-fabulous-app
+    app: wiki-app
     tier: frontend
   ports:
   - port: 80
-    targetPort: 80
+    name: http
+    targetPort: 3000
+  - port: 443
+    name: https
+    targetPort: 3000

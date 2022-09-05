@@ -22,4 +22,8 @@ Terraform plan is run again under the hood, and you will be prompted to enter y 
 
 After some waiting, the terraform deploy should be finished.
 
+Take note of the output that you get from this, as it will be used later. It should look somewhat like this:
+
+![example_output](example_output.png)
+
 Now, the instructors will do some verification to make sure everything is in order before continuing on.

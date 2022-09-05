@@ -1,4 +1,5 @@
 ﻿# How to create this app
+
 In this folder there is four files:
 
 * wiki-app-deployment.yaml
@@ -29,7 +30,6 @@ Create the service:
 Create the deployment (and in turn, the pods):
 
 ```kubectl apply -f wiki-app-deployment.yaml```
-
 
 See the following diagram for the relationship between pods and services components:
 

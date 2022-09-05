@@ -1,4 +1,5 @@
 ﻿apiVersion: v1
 kind: Namespace
 metadata:
+#Change this
   name: <insert the name of your namespace>

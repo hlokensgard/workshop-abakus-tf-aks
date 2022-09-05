@@ -76,3 +76,10 @@ Derette burde du være i stand til å kjøre kommandor mot AKS vha av kubectl. T
 ved å kjøre disse tre i sekvens burde dit output se noenlunde likt ut som dette:
 
 ![example output after previous commands](example_ouput_init_test.png)
+
+## High Level Design
+
+Følgende Figur er High-Level-Design for oppsettet vi skal lage i denne workshoppen.
+Du trenger ikke å forstå denne med en gang, vi skal forklare denne underveis.
+
+![High Level Design](high_level_design.png)

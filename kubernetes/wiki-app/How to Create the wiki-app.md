@@ -30,6 +30,7 @@ Create the deployment (and in turn, the pods):
 
 ```kubectl apply -f wiki-app-deployment.yaml```
 
-See the following diagram for the relationship between these components:
 
-## TODO - you allready have a diagram ready for this
+See the following diagram for the relationship between pods and services components:
+
+![pods_to_service](pods_to_service.png)

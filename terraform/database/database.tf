@@ -13,6 +13,7 @@ resource "azurerm_mssql_server" "mssql_server" {
   version                      = "12.0"
   administrator_login          = "dbadmin"
   administrator_login_password = random_password.password.result
+  public_network_access_enabled = true
 }
 
 resource "azurerm_mssql_database" "database" {

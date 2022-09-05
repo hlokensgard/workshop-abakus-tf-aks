@@ -36,7 +36,8 @@ All installasjon kan utføres ved å følge følgende prosess:
 
 * Installer Kubectl ved å kjøre
   
-  ```powershell curl -LO "https://dl.k8s.io/release/v1.25.0/bin/windows/amd64/kubectl.exe"``
+  ```curl -LO "https://dl.k8s.io/release/v1.25.0/bin/windows/amd64/kubectl.exe"```
+  
    Husk deretter å legge kubectl til i PATH slik at du kan bruke kubectl uansett hvor du står i filstrukturen.
 
 * Installer AZ CLI ved å kjøre

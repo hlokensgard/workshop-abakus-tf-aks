@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   #Change this
-  namespace: faithful-minnow
+  namespace: <your Namespace>
   name: wiki-app
   labels:
     app: wiki-app

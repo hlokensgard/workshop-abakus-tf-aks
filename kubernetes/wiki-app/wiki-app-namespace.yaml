@@ -2,4 +2,4 @@
 kind: Namespace
 metadata:
 #Change this
-  name: <insert the name of your namespace>
+  name: faithful-minnow
